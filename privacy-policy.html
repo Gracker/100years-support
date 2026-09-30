@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Years — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+        p, li {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        .highlight {
+            background: #f0f7ff;
+            border-left: 4px solid #007aff;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight p { margin-bottom: 0; color: #1d1d1f; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 24px;
+        }
+        .lang-switch a {
+            display: inline-block;
+            padding: 6px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #424245;
+        }
+        .lang-switch a:hover { background: #f5f5f7; text-decoration: none; }
+        @media (max-width: 600px) {
+            .container { padding: 28px 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="lang-switch">
+    <a href="privacy-policy-zh.html">中文版</a>
+</div>
+
+<h1>Privacy Policy</h1>
+<p class="subtitle">100 Years (活到百岁) &middot; Version 2026.09.30 &middot; Last updated: September 30, 2026</p>
+
+<div class="highlight">
+    <p><strong>Summary:</strong> Your health data stays on your device and in Apple Health unless you explicitly enable cloud AI processing and start an analysis. 100 Years does not operate a hosted cloud service in the current release. A permitted provider request is sent directly from your device to the endpoint you configure, using your API key when one is required.</p>
+</div>
+
+<h2>1. Information We Collect</h2>
+<p><strong>We do not operate analytics, crash-reporting, advertising, or tracking collection.</strong> Health metrics, profile data, imported reports, journals, analysis results, and preferences are stored in the app's local data container or read from Apple HealthKit after authorization. They do not leave your device except for an explicit export/share action or a permitted cloud AI request described below.</p>
+<p>The current app does not upload:</p>
+<ul>
+    <li>Crash reports or performance telemetry</li>
+    <li>Advertising identifiers or tracking data</li>
+    <li>Health records to servers operated by 100 Years</li>
+</ul>
+
+<h2>2. Health Data &amp; Apple HealthKit</h2>
+<p>100 Years integrates with Apple HealthKit to read health metrics you authorize, including but not limited to:</p>
+<ul>
+    <li>Heart rate, blood pressure, blood oxygen</li>
+    <li>Step count, walking distance, workout data</li>
+    <li>Sleep analysis data</li>
+    <li>Body measurements (height, weight, body fat)</li>
+    <li>Nutrition data</li>
+</ul>
+<p>In compliance with Apple's HealthKit guidelines:</p>
+<ul>
+    <li>Health data is <strong>never</strong> sold to advertising platforms, data brokers, or any third party.</li>
+    <li>Health data is <strong>never</strong> used for advertising or marketing purposes.</li>
+    <li>Health data is <strong>never</strong> stored on our servers or in cloud storage under our control.</li>
+    <li>You control which health data categories the app can access through iOS Settings → Health → 100 Years.</li>
+</ul>
+
+<h2>3. AI Analysis</h2>
+<p>On-device AI does not send the analysis input off-device. When you explicitly enable <strong>cloud AI processing consent</strong>, configure a provider, and start an analysis that uses it, the app sends the disclosed data categories directly from your device to that endpoint. Remote providers require your own API key; a local HTTP server can be used without a key. The app shows route metadata for completed AI work.</p>
+<ul>
+    <li>We do not proxy, intercept, or store any data sent to AI providers.</li>
+    <li>Your API key is stored securely in the iOS Keychain on your device.</li>
+    <li>Please review the privacy policy of your chosen AI provider to understand how they handle data.</li>
+</ul>
+
+<h2>4. Camera &amp; Photo Library</h2>
+<p>The app uses your camera to scan health/medical reports via OCR (Optical Character Recognition). Scanned images are processed on-device and are not uploaded to any server. Photo library access is used to import reports and save generated share images.</p>
+
+<h2>5. Notifications</h2>
+<p>With your permission, the app sends local notifications for exercise reminders, analysis completion, and health insights. No notification data is sent to external servers.</p>
+
+<h2>6. Purchases</h2>
+<p>100Years offers one non-consumable lifetime in-app purchase processed by Apple StoreKit. Apple handles purchases, App Store offer-code redemptions, verification, restoration, and refunds. We do not have access to your payment information, and we do not receive or independently validate activation codes.</p>
+
+<h2>7. Data Storage &amp; Security</h2>
+<ul>
+    <li>User profile data and analysis results are stored locally using SwiftData; preferences use the app's local defaults container.</li>
+    <li>API keys are stored in the iOS Keychain with the <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code> protection level.</li>
+    <li>Remote provider requests use HTTPS/TLS. A user-configured local HTTP endpoint is unencrypted: analysis data and any API key entered for it travel over the local network after your consent and an analysis you start. iOS may ask for Local Network permission. Remote HTTP endpoints are rejected.</li>
+</ul>
+
+<h2>8. Apple Watch</h2>
+<p>The companion Apple Watch app does not read Apple Health directly. It displays a bounded health snapshot sent by the iPhone through Apple's WatchConnectivity framework. The snapshot stays within your paired devices.</p>
+
+<h2>9. Children's Privacy</h2>
+<p>100 Years and its health estimates are intended for adults ages 18–120. Profiles outside that range cannot generate new estimates. Previously saved local data is not automatically deleted; you can correct the birth date, export your data, or delete it in the app.</p>
+
+<h2>10. Third-Party Services</h2>
+<p>The app may integrate with the following third-party services:</p>
+<ul>
+    <li><strong>Apple HealthKit, WatchConnectivity, and StoreKit</strong> — authorized health access, paired-device sync, lifetime purchases, offer-code redemption, restoration, and refund status. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+    <li><strong>AI Service Providers</strong> (only a provider the user configures and invokes) — cloud analysis. Users should review their selected provider's policy before granting cloud consent.</li>
+    <li><strong>Google LiteRT-LM</strong> — a vendored on-device inference runtime; its local use does not transmit analysis data.</li>
+</ul>
+
+<h2>11. Your Rights</h2>
+<p>You can:</p>
+<ul>
+    <li>Revoke HealthKit access at any time in iOS Settings.</li>
+    <li>Delete account data from the app's account settings, or remove the app and its local container.</li>
+    <li>Remove your API keys from the app's settings at any time.</li>
+    <li>Request information about any data we may have collected by contacting us.</li>
+</ul>
+
+<h2>12. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes are versioned and shown in the app. Existing users may dismiss an update and continue using local features; current consent is required before future cloud data egress or a new purchase.</p>
+
+<h2>13. Contact Us</h2>
+<p>The individual developer and operator of 100 Years is <strong>Jianwu Gao</strong>. If you have questions or concerns about this Privacy Policy, please contact:</p>
+<p><strong>Email:</strong> <a href="mailto:dreamtale.jg@gmail.com">dreamtale.jg@gmail.com</a></p>
+<p><a href="terms-of-service.html">Terms of Service</a> · <a href="support.html">Support</a></p>
+
+</div>
+
+</body>
+</html>

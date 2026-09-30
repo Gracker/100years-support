@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活到百岁 — 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #86868b;
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+        p, li {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        .highlight {
+            background: #f0f7ff;
+            border-left: 4px solid #007aff;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight p { margin-bottom: 0; color: #1d1d1f; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 24px;
+        }
+        .lang-switch a {
+            display: inline-block;
+            padding: 6px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #424245;
+        }
+        .lang-switch a:hover { background: #f5f5f7; text-decoration: none; }
+        @media (max-width: 600px) {
+            .container { padding: 28px 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="lang-switch">
+    <a href="privacy-policy.html">English</a>
+</div>
+
+<h1>隐私政策</h1>
+<p class="subtitle">活到百岁 (100 Years) &middot; 版本 2026.09.30 &middot; 最后更新：2026 年 9 月 30 日</p>
+
+<div class="highlight">
+    <p><strong>摘要：</strong>你的健康数据默认保存在设备和 Apple 健康中；只有当你明确开启云端 AI 数据处理同意并主动发起分析时，披露的数据类别才会离开设备。当前版本不提供 100Years 托管云服务；获准的请求会从设备直接发送到你配置的端点，需要时使用你自己的 API 密钥。</p>
+</div>
+
+<h2>1. 我们收集的信息</h2>
+<p><strong>当前版本不运行分析统计、崩溃上报、广告或追踪收集。</strong>健康指标、个人资料、导入报告、日记、分析结果和偏好保存在 App 本地容器，或在授权后从 Apple HealthKit 读取。除你主动导出/分享或下文说明的获准云端 AI 请求外，这些数据不会离开设备。</p>
+<p>当前 App 不上传：</p>
+<ul>
+    <li>崩溃报告或性能遥测；</li>
+    <li>广告标识符或追踪数据；</li>
+    <li>健康记录到 100Years 运营的服务器。</li>
+</ul>
+
+<h2>2. 健康数据与 Apple HealthKit</h2>
+<p>活到百岁 集成 Apple HealthKit，读取你授权的健康指标，包括但不限于：</p>
+<ul>
+    <li>心率、血压、血氧</li>
+    <li>步数、步行距离、运动数据</li>
+    <li>睡眠分析数据</li>
+    <li>身体测量数据（身高、体重、体脂）</li>
+    <li>营养数据</li>
+</ul>
+<p>遵循 Apple HealthKit 使用规范：</p>
+<ul>
+    <li>健康数据<strong>绝不会</strong>出售给广告平台、数据经纪商或任何第三方。</li>
+    <li>健康数据<strong>绝不会</strong>用于广告或营销目的。</li>
+    <li>健康数据<strong>绝不会</strong>存储在我们的服务器或我们控制的云存储上。</li>
+    <li>你可以随时在 iOS 设置 → 健康 → 活到百岁 中控制应用可以访问的健康数据类别。</li>
+</ul>
+
+<h2>3. AI 分析</h2>
+<p>端侧 AI 不会把分析输入发送到设备外。只有当你明确开启<strong>云端 AI 数据处理同意</strong>、配置服务商并主动发起使用该服务商的分析时，App 才会把界面披露的数据类别从设备直接发送到该端点。远程服务商需要你自己的 API 密钥；局域网 HTTP 服务器可不填写密钥。完成后的 AI 工作会显示实际路由元数据。</p>
+<ul>
+    <li>我们不会代理、截取或存储任何发送给 AI 服务商的数据。</li>
+    <li>你的 API 密钥安全地存储在设备的 iOS Keychain 中。</li>
+    <li>请查阅你所选 AI 服务商的隐私政策，了解他们如何处理数据。</li>
+</ul>
+
+<h2>4. 相机与相册</h2>
+<p>应用使用相机通过 OCR（光学字符识别）扫描健康/体检报告。扫描的图片在设备上处理，不会上传到任何服务器。相册访问用于导入报告和保存生成的分享图片。</p>
+
+<h2>5. 通知</h2>
+<p>经你许可后，应用会发送本地通知，用于运动提醒、分析完成通知和健康洞察。通知数据不会发送到外部服务器。</p>
+
+<h2>6. 购买</h2>
+<p>100Years 提供一个由 Apple StoreKit 处理的非消耗型永久买断商品。购买、App Store 激活码兑换、验证、恢复与退款均由 Apple 处理；我们无法访问你的支付信息，也不接收或自行验证激活码。</p>
+
+<h2>7. 数据存储与安全</h2>
+<ul>
+    <li>个人资料和分析结果使用 SwiftData 本地保存；偏好使用 App 本地 defaults 容器。</li>
+    <li>API 密钥存储在 iOS Keychain 中，使用 <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code> 保护级别。</li>
+    <li>远程服务商请求使用 HTTPS/TLS。你自行配置的局域网 HTTP 端点不加密：经你同意并主动发起分析后，分析数据及你为该端点填写的 API 密钥会在局域网传输。iOS 可能请求“本地网络”权限。远程 HTTP 端点会被拒绝。</li>
+</ul>
+
+<h2>8. Apple Watch</h2>
+<p>配套 Apple Watch App 不直接读取 Apple 健康，而是通过 Apple WatchConnectivity 显示 iPhone 发来的受限健康快照。快照数据留在你的配对设备之间。</p>
+
+<h2>9. 儿童隐私</h2>
+<p>活到百岁及其健康估计适用于 18–120 岁成年人。超出范围的资料不能生成新的估计。既有本地数据不会自动删除；你可以在 App 内更正出生日期、导出或删除数据。</p>
+
+<h2>10. 第三方服务</h2>
+<p>应用可能集成以下第三方服务：</p>
+<ul>
+    <li><strong>Apple HealthKit、WatchConnectivity 与 StoreKit</strong>——授权健康读取、配对设备同步、永久买断、激活码兑换、恢复与退款状态。<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 隐私政策</a></li>
+    <li><strong>AI 服务商</strong>（仅限你配置并主动调用的服务商）——云端分析。授予云端同意前，请先阅读所选服务商的政策。</li>
+    <li><strong>Google LiteRT-LM</strong>——随 App 提供的端侧推理 runtime；本地使用不会传输分析数据。</li>
+</ul>
+
+<h2>11. 你的权利</h2>
+<p>你可以：</p>
+<ul>
+    <li>随时在 iOS 设置中撤销 HealthKit 访问权限。</li>
+    <li>在 App 账户设置中删除账户数据，或卸载 App 并移除其本地容器。</li>
+    <li>随时在应用设置中移除你的 API 密钥。</li>
+    <li>通过联系我们，了解我们可能收集的任何数据的相关信息。</li>
+</ul>
+
+<h2>12. 政策变更</h2>
+<p>我们可能不定期更新本政策。变更会使用版本号并在 App 内提示。现有用户可以暂缓接受并继续使用本地功能；未来云端数据发送或新购买前必须接受当前版本。</p>
+
+<h2>13. 联系我们</h2>
+<p>100 Years 的个人开发者及运营者为 <strong>Jianwu Gao</strong>。如果你对本隐私政策有任何问题或疑虑，请通过以下方式联系：</p>
+<p><strong>邮箱：</strong><a href="mailto:dreamtale.jg@gmail.com">dreamtale.jg@gmail.com</a></p>
+<p><a href="terms-of-service-zh.html">服务条款</a> · <a href="support.html">帮助与支持</a></p>
+
+</div>
+
+</body>
+</html>

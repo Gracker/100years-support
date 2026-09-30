@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Years — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: #86868b; font-size: 15px; margin-bottom: 32px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+        h3 { font-size: 16px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+        p, li { font-size: 15px; color: #424245; margin-bottom: 12px; }
+        ul { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .faq { border-top: 1px solid #e5e5ea; padding-top: 16px; margin-top: 16px; }
+        .contact-card {
+            background: #f0f7ff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+            text-align: center;
+        }
+        .contact-card p { color: #1d1d1f; }
+        @media (max-width: 600px) {
+            .container { padding: 28px 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Support / 帮助与支持</h1>
+<p class="subtitle">100 Years (活到百岁)</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+    <h3>How does the AI prediction work? / AI 预测如何工作？</h3>
+    <p>The app combines deterministic longevity models with optional AI explanations. Estimates are for reference and are not clinically validated. On-device AI keeps analysis input local. A request you start reaches a configured provider only after cloud-processing consent; remote providers require your own API key, while a local HTTP server may work without one.</p>
+    <p>应用把确定性长寿健康模型与可选 AI 解读结合。估计结果仅供参考，尚未经临床验证。端侧 AI 会把分析输入留在本地。只有在你同意云端处理并主动发起请求后，数据才会发送给配置的服务商；远程服务需要你自己的 API Key，局域网 HTTP 服务可不填写。</p>
+</div>
+
+<div class="faq">
+    <h3>Is my health data safe? / 我的健康数据安全吗？</h3>
+    <p>Health data stays in Apple Health and the app's local container unless you explicitly export/share it or initiate a consented cloud request. The current release has no analytics, crash upload, advertising, or 100 Years hosted cloud service. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <p>健康数据保存在 Apple 健康与 App 本地容器，除非你主动导出/分享或发起已获同意的云端请求。当前版本不运行分析统计、崩溃上报、广告或 100 Years 托管云服务。详见<a href="privacy-policy-zh.html">隐私政策</a>。</p>
+</div>
+
+<div class="faq">
+    <h3>How do I set up an API key? / 如何设置 API 密钥？</h3>
+    <p>Go to Settings → Cloud Model Management, choose a remote provider, enter your own key, and validate it. A custom local HTTP server may be used without a key. Grant cloud AI processing consent before starting a request to either endpoint.</p>
+    <p>前往 设置 → 云端模型管理，选择远程服务商，填入自己的 API Key 并验证。自定义局域网 HTTP 服务可不填写密钥。向任一端点发起请求前，需开启云端 AI 数据处理同意。</p>
+</div>
+
+<div class="faq">
+    <h3>What health data does the app need? / 应用需要哪些健康数据？</h3>
+    <p>Additional authorized data can give the model more context, but it does not guarantee a more accurate estimate. Supported inputs include heart rate, blood pressure, sleep, workouts, steps, body measurements, and blood test results imported from reports.</p>
+    <p>获得授权的更多数据可为模型提供更多背景，但不保证估计更准确。支持的输入包括心率、血压、睡眠、运动、步数、身体测量数据，以及从报告导入的血液检查结果。</p>
+</div>
+
+<div class="faq">
+    <h3>How do I buy, redeem, or restore Lifetime? / 如何购买、兑换或恢复完整版？</h3>
+    <p>Go to Settings → Lifetime Access to buy the one-time product, open Apple's activation-code sheet, or restore an existing purchase. Apple processes every purchase and redemption; restoring creates no new charge.</p>
+    <p>前往 设置 → 完整版，即可一次性买断、打开 Apple 激活码兑换面板，或恢复已有购买。所有购买和兑换均由 Apple 处理；恢复不会产生新扣款。</p>
+</div>
+
+<div class="contact-card">
+    <h2>Contact Us / 联系我们</h2>
+    <p>Have a question or found a bug? We'd love to hear from you.</p>
+    <p>有问题或发现了 Bug？欢迎联系我们。</p>
+    <p style="margin-top: 16px;"><strong>Email / 邮箱:</strong> <a href="mailto:dreamtale.jg@gmail.com">dreamtale.jg@gmail.com</a></p>
+    <p><a href="terms-of-service.html">Terms of Service</a> / <a href="terms-of-service-zh.html">服务条款</a></p>
+</div>
+
+</div>
+
+</body>
+</html>
